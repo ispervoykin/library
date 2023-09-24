@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <header id="header">
+        <div class="buttons">
+            <button class="new-button">New</button>
+            <button class="delete-all-button">Delete All</button>
+        </div>
+    </header>
+    <main id="main">    
+        <dialog id="new-dialog">
+            <form method="dialog" class="dialog-form">
+                <div class="title-div">
+                    <input type="text" id="title" name="title" placeholder="Title" required>
+                </div>
+                <div>
+                    <input type="text" id="author" name="author" placeholder="Author" required>
+                </div>
+                <div>
+                    <input type="text" id="numOfPages" name="numOfPages" placeholder="Number of pages (Numbers only)" required pattern="[0-9]+">
+                </div>
+                <div>
+                    <input type="button" id="read" name="read" value="Read" class="read-button read-true">
+                </div>
+                <div class="cancel-confirm-buttons">
+                    <button id="cancel" type="reset">Cancel</button>
+                    <button id="submit" type="submit">Confirm</button>
+                </div>
+            </form>
+        </dialog>
+
+        <div class="grid">
+        </div>
+    </main>
+</body>
+</html>
