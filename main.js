@@ -6,11 +6,13 @@ for (let book of sample) {
     addBookToLibrary(book);
 }
 
-function Book(title, author, numOfPages, read) {
-    this.title = title;
-    this.author = author;
-    this.numOfPages = numOfPages;
-    this.read = read;
+class Book {
+    constructor(title, author, numOfPages, read) {
+        this.title = title;
+        this.author = author;
+        this.numOfPages = numOfPages;
+        this.read = read;
+    }
 }
 
 function addBookToLibrary(book) {
